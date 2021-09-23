@@ -18,9 +18,6 @@ word_list = []
 
 
 def main():
-	"""
-	TODO:
-	"""
 	global boggle_dic
 	read_dictionary()
 	search_row1 = str(input('1 row of letters: '))
@@ -71,7 +68,7 @@ def check_input_form(string):
 def find_answer(boggle_dic, x, y, start_point, index):
 	"""
 	:param : dic, containing all the boggle data.
-	:return:
+	:return: a dic that contains answer.
 	"""
 	find_answer_helper(boggle_dic, x, y, start_point, index)
 
